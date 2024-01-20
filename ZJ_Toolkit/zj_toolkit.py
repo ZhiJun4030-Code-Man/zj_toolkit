@@ -1,4 +1,5 @@
 from random import  randint
+from time import sleep
 def hexman(min,max):
     return hex(randint(min,max))
 def printProgress(iteration, total, prefix='', suffix='', decimals=1, barLength=100):
@@ -20,3 +21,26 @@ def printProgress(iteration, total, prefix='', suffix='', decimals=1, barLength=
     if iteration == total:
         sys.stdout.write('\n')
     sys.stdout.flush()
+
+def cicon(time,how):
+    if time==True:
+        print('   _____               _                                         ____     _____ ')
+        sleep(how)
+        print('  / ____|             | |                                       / __ \   / ____|')
+        sleep(how)
+        print(' | |        ___     __| |   ___    _ __ ___    __ _   _ __     | |  | | | (___  ')
+        sleep(how)
+        print(" | |       / _ \   / _` |  / _ \  | '_ ` _ \  / _` | | '_ \    | |  | |  \___ \ ")
+        sleep(how)
+        print(' | |____  | (_) | | (_| | |  __/  | | | | | || (_| | | | | |   | |__| |  ____) |')
+        sleep(how)
+        print('  \_____|  \___/   \__,_|  \___|  |_| |_| |_| \__,_| |_| |_|    \____/  |_____/ ')
+    if time == False:
+        print('   _____               _                                         ____     _____ ')
+        print('  / ____|             | |                                       / __ \   / ____|')
+        print(' | |        ___     __| |   ___    _ __ ___    __ _   _ __     | |  | | | (___  ')
+        print(" | |       / _ \   / _` |  / _ \  | '_ ` _ \  / _` | | '_ \    | |  | |  \___ \ ")
+        print(' | |____  | (_) | | (_| | |  __/  | | | | | || (_| | | | | |   | |__| |  ____) |')
+        print('  \_____|  \___/   \__,_|  \___|  |_| |_| |_| \__,_| |_| |_|    \____/  |_____/ ')
+
+
