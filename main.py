@@ -5,7 +5,7 @@ i = 0
 l = len(items)
 for i in items:
 
-    zj_toolkit.printProgress(i+1,l,"printing","deb",0,50)
+    zj_toolkit.printProgress(i+1,100,"printing","deb",0,50)
 
     i+=1
     time.sleep(0.1)
